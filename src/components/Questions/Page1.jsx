@@ -36,7 +36,7 @@ function Page1() {
 
     return (
       <div className=' scrollbar-hide flex flex-col bg-[#07362E] ml-4 mr-4 h-screen text-white'  style={{overflowY: 'scroll' }} ref={containerRef}>
-        <div className='mr-2 ml-2 mt-6 mb-16'>
+        <div className='mr-2 ml-2 mt-6 mb-10'>
             <Link to='/'>
                 <button className='bg-[#08ca5c] py-4 px-4 rounded-2xl'>
                     <SlArrowLeft/>
