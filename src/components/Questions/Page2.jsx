@@ -23,7 +23,7 @@ export default function Page2() {
 
 
     return (
-        <div className="flex flex-col bg-[#07362E]  h-screen">
+        <div className="m-4 flex flex-col bg-[#07362E]  h-screen">
             <div className='mr-2 ml-2 mt-6 mb-16'>
                 <Link to='/page1'>
                     <button className='bg-[#08ca5c] py-4 px-4 rounded-2xl'>

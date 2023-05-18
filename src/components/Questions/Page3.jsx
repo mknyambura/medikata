@@ -23,7 +23,7 @@ const meditationInterest = [
 ]
 function Page3() {
   return (
-    <div className='flex flex-col h-screen m-4 scrollbar-hide'>
+    <div className='flex flex-col h-screen m-4 bg-[#07362E] scrollbar-hide'>
         <div className='mr-2 ml-2 mt-6 mb-16'>
             <Link to='/page2'>
                 <button className='bg-[#08ca5c] py-4 px-4 rounded-2xl'>
@@ -58,8 +58,8 @@ function Page3() {
                 </button>
             ))}
         </div>
-        <Link to='/page3' className='flex rounded-lg w-full'>
-          <button type="submit" className='w-1/2 bg-[#fca728] hover:bg-opacity-80 font-bold text-gray-800 p-3 mt-9 mb-6 mx-auto items-center align-center rounded-lg'>Continue</button>
+        <Link to='/home' className='flex rounded-lg w-full'>
+          <button type="submit" className='w-1/2 bg-[#fca728] hover:bg-opacity-80 font-bold text-gray-800 p-3 mt-9 mb-6 mx-auto items-center align-center rounded-lg'>Get started</button>
         </Link>
     </div>
   )
