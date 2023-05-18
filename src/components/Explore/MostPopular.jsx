@@ -21,7 +21,7 @@ function Explore() {
             </button>
         </Link>
         <h1 className='text-white text-4xl font-extrabold'>Most <span className='text-[#fca728]'>Popular</span></h1>
-        <img src={search} alt="" />
+        <img src={search} alt="" width={30} height={30}/>
       </div>
       <div>
         <div className='flex flex-row flex-wrap gap-4 m-6 justify-between'>
@@ -29,64 +29,81 @@ function Explore() {
             <div>
               <img src={midnightRelaxationImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[20px]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[20px]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div className='absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>
               <p >Midnight & Relaxation</p>
             </div>
           </div>
+          
           <div className='relative text-center'>
             <div className=' '> 
               <img src={joggingImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[10%]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[10%]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div className=' absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>
               <p>Jogging and cycling</p>
             </div>
           </div>
+          
           <div className='relative text-center'>
             <div>
               <img src={midnightLaunderteeImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[10%]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[10%]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div>
               <p className=' absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>Midnight Laundertee</p>
             </div>
           </div>
+          
           <div className='relative text-center'>
             <div>
               <img src={riverImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[10%]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[10%]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div>
               <p className='absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>Jogging and Cycling</p>
             </div>
           </div>
+          
           <div className='relative text-center'>
             <div>
               <img src={tickleMeImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[10%]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[10%]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div>
               <p className='absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>Tickle Me Pink</p>
             </div>
           </div>
+          
           <div className='relative text-center'>
             <div>
               <img src={mountainsImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[10%]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[10%]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div>
               <p className='absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>Michael in the Bathroom</p>
             </div>

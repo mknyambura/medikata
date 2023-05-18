@@ -12,7 +12,21 @@ import Page3 from './components/Questions/Page3';
 import Home from './components/Home/Home';
 import Explore from './components/Explore/MostPopular';
 import Categories from './components/Categories/Categories';
-
+import StressRelief from './components/Categories/Category/StressRelief';
+import Sleeping from './components/Categories/Category/Sleeping';
+import Disappointed from './components/Categories/Category/Disappointed';
+import Confused from './components/Categories/Category/Confused';
+import Frowning from './components/Categories/Category/Frowning';
+import Grimming from './components/Categories/Category/Grimming';
+import Distraught from './components/Categories/Category/Distraught';
+import Grimicing from './components/Categories/Category/Grimicing';
+import Comfounded from './components/Categories/Category/Comfounded';
+import Relieved from './components/Categories/Category/Relieved'
+import Persevering from './components/Categories/Category/Persevering';
+import Worried from './components/Categories/Category/Worried';
+import Crying from './components/Categories/Category/Crying';
+import Listening from './components/Listening/Listening';
+import Profile from './components/Profile/Profile';
 
 function App() {
   return (
@@ -30,6 +44,21 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/mostPopular' element={<Explore/>}/>
         <Route path='/categories' element={<Categories/>}/>
+        <Route path='/stressRelief' element={<StressRelief/>}/>
+        <Route path='/sleeping' element={<Sleeping/>}/>
+        <Route path='/disappointed' element={<Disappointed/>}/>
+        <Route path='/confused' element={<Confused/>}/>
+        <Route path='/frowning' element={<Frowning/>}/>
+        <Route path='/grimming' element={<Grimming/>}/>
+        <Route path='/distraught' element={<Distraught/>}/>
+        <Route path='/grimicing' element={<Grimicing/>}/>
+        <Route path='/comfounded' element={<Comfounded/>}/>
+        <Route path='/relieved' element={<Relieved/>}/>
+        <Route path='/persevering' element={<Persevering/>}/>
+        <Route path='/worried' element={<Worried/>}/>
+        <Route path='/crying' element={<Crying/>}/>
+        <Route path='/listening' element={<Listening/>}/>
+        <Route path='/profile' element={<Profile/>}/>
       </Routes>
     </div>
   )

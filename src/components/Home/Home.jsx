@@ -19,45 +19,57 @@ import midnightLaunderteeImage from '../../images/Rectangle 9508.png'
 
 function Home() {
   return (
-    <div className='bg-[#07362E] mt-6 mb-6 '>
-      <div className='flex flex-row justify-between m-4'>
+    <div className='bg-[#07362E] mt-6 mb-6 mr-6'>
+      <div className='flex items-center justify-between m-4'>
         <div className='float-left'>
-          <img src={user} alt="userIcon" width={100} height={100} />
-
+          <Link to='/profile'>
+            <img src={user} alt="userIcon" width={100} height={100} />
+          </Link>
         </div>
-        <div className='rounded-lg outline-gray-500 border-gray-500 float-right'>
+        {/* <div className=' flex rounded-lg outline-gray-500 border-gray-500 '> */}
           <Link to='/categories'>
             <img src={categories} alt="" />
           </Link>
-          <img src={search} alt="" />
-        </div>
+        {/* </div> */}
+      </div>
+      <div action="" className='flex flex-row-reverse items-center'>
+        <input type="text" className=' focus:outline-none hover:cursor-pointer border hover:outline-lime-500 hover:border-lime-500 rounded-lg bg-[#07362E] text-white w-1/2 h-6 px-6 py-6' placeholder='Search "Breathing Mind Freshing"'/>
+        <img src={search} alt="" className='absolute items-center bg-transparent m-2' />
       </div>
       <h1 className='text-white text-8xl font-extrabold m-4'>Hi Ashik!</h1>
       <h1 className='text-gray-300 text-3xl m-4'>How are you feeling today ?</h1>
       <br />
       <div className='flex flex-row justify-evenly mb-4'>
         <div className='text-white'>
-          <button className='bg-[#08ca5c] rounded-2xl sm:py-4 sm:px-4 lg:py-8 lg:px-8 mb-4'>
-            <img src={stressRelief} alt="" width={50} height={50}/>
-          </button>
+          <Link to='/stressRelief'>
+            <button className='bg-[#08ca5c] rounded-2xl sm:py-4 sm:px-4 lg:py-8 lg:px-8 mb-4'>
+              <img src={stressRelief} alt="" width={50} height={50}/>
+            </button>
+          </Link>
           <p>Stress Relief</p>
         </div>
         <div className='text-white'>
-          <button className='bg-[#08ca5c] rounded-2xl sm:py-4 sm:px-4 lg:py-8 lg:px-8 mb-4'>
-            <img src={sleeping} alt="" width={50} height={50}/>
-          </button>
+          <Link to='/sleeping'>
+            <button className='bg-[#08ca5c] rounded-2xl sm:py-4 sm:px-4 lg:py-8 lg:px-8 mb-4'>
+              <img src={sleeping} alt="" width={50} height={50}/>
+            </button>
+          </Link>
           <p>Sleeping</p>
         </div>
         <div className='text-white'>
-          <button className='bg-[#08ca5c] rounded-2xl sm:py-4 sm:px-4 lg:py-8 lg:px-8 mb-4'>
-            <img src={disappointed} alt="" width={50} height={50}/>
-          </button>
-          <p>Dissapointed</p>
+          <Link to='/disappointed'>
+            <button className='bg-[#08ca5c] rounded-2xl sm:py-4 sm:px-4 lg:py-8 lg:px-8 mb-4'>
+              <img src={disappointed} alt="" width={50} height={50}/>
+            </button>
+          </Link>
+          <p>Disappointed</p>
         </div>
         <div className='text-white'>
-          <button className='bg-[#08ca5c] rounded-2xl sm:py-4 sm:px-4 lg:py-8 lg:px-8 mb-4'>
-            <img src={relieved} alt="" width={50} height={50}/>
-          </button>
+          <Link to='/relieved'>
+            <button className='bg-[#08ca5c] rounded-2xl sm:py-4 sm:px-4 lg:py-8 lg:px-8 mb-4'>
+              <img src={relieved} alt="" width={50} height={50}/>
+            </button>
+          </Link>
           <p>Relieved</p>
         </div>
       </div>
@@ -80,46 +92,58 @@ function Home() {
           </Link>
         </div>
         <div className='flex flex-row flex-wrap gap-4 mb-6 justify-between'>
+          
           <div className='relative text-center'>
             <div className=' '> 
               <img src={joggingImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[10%]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[10%]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div className=' absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>
               <p>Jogging and cycling</p>
             </div>
           </div>
+          
           <div className=' relative text-center'>
             <div>
               <img src={midnightRelaxationImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[20px]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[20px]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div className='absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>
               <p >Midnight & Relaxation</p>
             </div>
           </div>
+          
           <div className='relative text-center'>
             <div className=' '> 
               <img src={midnightLaunderteeImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[10%]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[10%]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div className=' absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>
               <p>Midnight Laundertee</p>
             </div>
           </div>
+          
           <div className=' relative text-center'>
             <div>
               <img src={riverImage} alt="" width={250} height={150}/>
             </div>
-            <div className='absolute top-[10%] left-[20px]'>
-              <img src={playIcon} alt="" />
-            </div>
+            <Link to='/listening'>
+              <div className='absolute top-[10%] left-[20px]'>
+                <img src={playIcon} alt="" />
+              </div>
+            </Link>
             <div className='absolute top-[70%] left-[40%] text-white font-extrabold text-2xl'>
               <p >Jogging and cycling</p>
             </div>
