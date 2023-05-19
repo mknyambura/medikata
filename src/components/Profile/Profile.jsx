@@ -20,7 +20,9 @@ function Profile() {
                     <SlArrowLeft/>
                 </button>
             </Link>
-            <FcSettings className='text-5xl'/>
+            <Link to='/settings'>
+                <FcSettings className='text-5xl'/>
+            </Link>
         </div>
         <div className='bg-[#084137] rounded-3xl m-8 flex flex-row items-center gap-6'>
             <img src={user} alt="" className='m-6' width={150} height={150}/>

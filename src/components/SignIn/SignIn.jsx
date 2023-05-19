@@ -81,16 +81,18 @@ function SignIn() {
                   onClick={handleClickShowPassword}
                 >
                   {passwordValue ? (
-                    <EyeIcon className="h-5 font-extralight"/> 
+                    <EyeIcon className="h-5 text-white"/> 
                   ) : (
-                    <EyeOffIcon className="h-5 font-extralight"/>
+                    <EyeOffIcon className="h-5 text-white"/>
                   )}
                 </button>
               </div>
             {/* </div> */}
             
             <p className="pt-4 text-white font-bold">Forgot password?</p>
-            <button type="submit" className='w-1/2 bg-[#fca728] hover:bg-opacity-80 font-bold text-gray-800 p-3 mt-9 rounded'>Sign In</button>
+            <Link to='/home' className='flex flex-col w-1/2 items-center'>
+              <button type="submit" className='w-1/2 bg-[#fca728] hover:bg-opacity-80 font-bold text-gray-800 p-3 mt-9 rounded'>Sign In</button>
+            </Link>
            
           </div>
         </form>

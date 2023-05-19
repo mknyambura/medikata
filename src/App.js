@@ -27,7 +27,11 @@ import Worried from './components/Categories/Category/Worried';
 import Crying from './components/Categories/Category/Crying';
 import Listening from './components/Listening/Listening';
 import Profile from './components/Profile/Profile';
-
+import Settings from './components/ManageSettings/ManageSettings'
+import AccountInformation from './components/AccountInformation/AccountInformation'
+import Notifications from './components/Notifications/Notifications';
+import DailyReminders from './components/DailyReminders/DailyReminders';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 function App() {
   return (
     <div className='App bg-[#07362E]'>
@@ -59,6 +63,11 @@ function App() {
         <Route path='/crying' element={<Crying/>}/>
         <Route path='/listening' element={<Listening/>}/>
         <Route path='/profile' element={<Profile/>}/>
+        <Route path='/settings' element={<Settings/>}/>
+        <Route path='/accountInformation' element={<AccountInformation/>}/>
+        <Route path='/notifications' element={<Notifications/>}/>
+        <Route path='/dailyReminders' element={<DailyReminders/>}/>
+        <Route path='/privacyPolicy' element={<PrivacyPolicy/>}/>
       </Routes>
     </div>
   )
