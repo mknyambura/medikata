@@ -58,12 +58,14 @@ function Settings() {
             </div>
             <h1 className='font-extrabold text-3xl'>Terms of Service</h1>
           </div>
-          <div className='m-6 flex gap-8 items-center'>
-            <div className='bg-[#075244] px-6 py-6 rounded-2xl'>
-              <BsBoxArrowInLeft className='text-2xl'/>
+          <Link to='/'>
+            <div className='m-6 flex gap-8 items-center'>
+              <div className='bg-[#075244] px-6 py-6 rounded-2xl'>
+                <BsBoxArrowInLeft className='text-2xl'/>
+              </div>
+              <h1 className='font-extrabold text-3xl'>Sign out</h1>
             </div>
-            <h1 className='font-extrabold text-3xl'>Sign out</h1>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
